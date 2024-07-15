@@ -1,0 +1,29 @@
+%lowerModules%_create_api:
+    path: /api/%lowerModules%
+    controller: Seavices\Apps\Backoffice\Backend\Controller\%modules%\%module%CreatePostApiController
+    defaults: { auth: true }
+    methods:  [POST]
+
+%lowerModules%_find_api:
+    path: /api/%lowerModules%/{id}
+    controller: Seavices\Apps\Backoffice\Backend\Controller\%modules%\%module%FindGetApiController
+    defaults: { auth: true }
+    methods:  [GET]
+
+%lowerModules%_search_all_api:
+    path: /api/%lowerModules%
+    controller: Seavices\Apps\Backoffice\Backend\Controller\%modules%\%module%SearchAllGetApiController
+    defaults: { auth: true }
+    methods:  [GET]
+
+%lowerModules%_update_api:
+    path: /api/%lowerModules%/{id}
+    controller: Seavices\Apps\Backoffice\Backend\Controller\%modules%\%module%UpdatePutApiController
+    defaults: { auth: true }
+    methods:  [PUT]
+
+%lowerModules%_delete_api:
+    path: /api/%lowerModules%/{id}
+    controller: Seavices\Apps\Backoffice\Backend\Controller\%modules%\%module%DeleteDeleteApiController
+    defaults: { auth: true }
+    methods:  [DELETE]
